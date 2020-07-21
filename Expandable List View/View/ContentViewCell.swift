@@ -32,7 +32,8 @@ struct ContentViewCell: View {
                     .font(.headline)
                 
                 Spacer()
-                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                Image(systemName: "chevron.down")
+                    .rotationEffect(.degrees(isExpanded ? -180 : 0))
                     .font(.system(size: 22, weight: .regular))
                     .foregroundColor(.black)
                     .padding(.trailing, 40)
